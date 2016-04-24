@@ -5,8 +5,8 @@ timeout 15
 
 preload_app true
 
-pid "/var/run/books-unicorn.pid"
-listen "/var/run/books-unicorn.sock"
+pid "./tmp/pids/books-unicorn.pid"
+listen "./tmp/sockets/books-unicorn.sock"
 
 # 子プロセスを作成する前に実行する処理をブロック内に記述
 before_fork do |server, worker|
